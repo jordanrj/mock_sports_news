@@ -59,7 +59,6 @@ app.post("/contact", function(req, res) {
             }
         })
     }
-
 });
 
 app.listen(process.end.PORT, function() {
