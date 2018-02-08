@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header h1, header nav, nav li {
+    display: inline-block;
+}
+
+header {
+    position:fixed;
+    width:100%;
+    height:50px;
+    background-color: #fff;
+}
+
+header h1 {
+    min-height: 50px;
+    line-height: 50px;
+    padding-left: 15px;
+}
+
+nav {
+    float: right;
+    min-height: 50px;
+    line-height: 45px;
+}
+
+nav li {
+    margin-right: 25px;
+    font-family: Helvetica;
+}
+
+#heroSection {
+    height: 65vh;
+    background: url('https://static.pexels.com/photos/848594/pexels-photo-848594.jpeg');
+    background-size: cover;
+    background-position: 0 -400px;
+}
+
+#heroSection div {
+    height: 65vh;
+    background: rgba(0,0,0,.6);
+}
+
+#heroSection h1 {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    font-family: Helvetica;
+    font-weight:  lighter;
+    padding-top: 15vh;
+}
+
+#heroSection a {
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 20vh;
+    width: 15vw ;
+    background: rgba(0,0,0,0);
+    border: 2px solid white;
+    border-radius: 35px;
+    color: white;
+}
+
+#heroSection button {
+    display: block;
+    margin: auto;
+    width: 15vw ;
+    background: rgba(0,0,0,0);
+    border-radius: 35px;
+    border: none;
+    color: white;
+}
+
+div a {
+    text-decoration: none;
+}
+
+#heroSection button:hover {
+    background: rgba(255,255,255,.4);
+    cursor: pointer;
+}
+
+#heroSection h2 {
+    margin: 2vh auto;
+}
+
+#circleArea h1 {
+    font-size: 3em;
+    font-family: Helvetica;
+    font-weight: 500;
+    text-align: center;
+    margin: 12vh auto 6vh auto;
+    color: rgb(43, 107, 204);
+}
+
+#circleArea h2 {
+    font-family: Helvetica;
+    text-align: center;
+    margin-bottom: 12vh;
+    font-size: 3em;
+}
+
+.circleItem {
+    width: 6.8vw;
+    height: 6.8vw;
+    line-height: 6.8vw;
+    margin-left: .3vw;
+    margin-bottom: 8vh;
+    border: 1px solid blue;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+#textLogoArea {
+    background: url('https://static.pexels.com/photos/171568/pexels-photo-171568.jpeg');
+    background-size: cover;
+    background-position:0 -250px;
+    height: 60vh;
+}
+
+#ipsumRed {
+    color: red;
+}
+
+#opacityLevel {
+    height: 60vh;
+    background: rgba(255,255,255,.9);
+}
+
+.partialWidth {
+    width: 60vw;
+    margin: auto;
+}
+
+#opacityLevel .partialWidth div {
+    height: 56vh;
+    width: 27vw;
+    margin: 2vh auto;
+    float: left;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Helvetica;
+    padding-top: 6vh;
+}
+
+#opacityLevel .partialWidth div p {
+    margin-top: 3vh;
+    line-height: 4vh;
+    text-align: left;
+}
+
+#opacityLevel .partialWidth img {
+    height: 56vh;
+    width: 30vw;
+    margin: 2vh auto;
+    padding-left: 2vw;
+    float: right;
+    border-left: 1px solid grey;
+    
+}
+
+
+
+@media (max-width: 1588px) {
+    #heroSection {
+        background-position: 0 -200px;
+    }
+}
+
+@media (max-width: 1195px) {
+    #heroSection {
+        background-position: 0 0px;
+    }
+}

@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    position: fixed;
+    height: 11vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+header img {
+    height: 10vh;
+    width: auto;
+    display: inline-block;
+    
+    padding: .5px;
+}
+
+#menuButton {
+    float: right;
+    margin: 1.5vh;
+    height: 8vh;
+    background-color: #fff;
+    border: 2px solid black;
+    padding-left:6vw;
+    padding-right: 6vw;
+    line-height: 4vh;
+    border-radius:15px;
+}
+
+#menuNav a {
+    text-decoration: none;
+    color: #fff;
+    background: #777;
+    width: 30%;
+    display: block;
+    margin-left: 64%;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #eee;
+}
+
+nav {
+    display: none;
+}
+
+#heroSection {
+    background: url('./images/snowboard.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+#heroSection div {
+    height: 50vh;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    text-align: center;
+    font-family: Arial;
+    font-size: 1em;
+    padding-top: 10vh;
+}
+
+#newsHeadline {
+    width: 90vw;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+#heroSection a {
+    display: block;
+    margin: auto;
+    margin-top: 5vh;
+    width: 250px;
+    background: rgba(0,0,0,0);
+    border: 2px solid white;
+    border-radius: 35px;
+    color: white;
+}
+
+#heroSection button {
+    display: block;
+    margin: auto;
+    width: 250px;
+    background: rgba(0,0,0,0);
+    border-radius: 35px;
+    border: none;
+    color: white;
+}
+
+div a {
+    text-decoration: none;
+}
+
+#heroSection button:hover {
+    background: rgba(255,255,255,.4);
+    cursor: pointer;
+}
+
+#heroSection h2 {
+    margin: 2vh auto;
+}
+
+
+#circleArea {
+    text-align: center;
+    padding-bottom: 10vw;
+}
+
+#circleArea h1 {
+    font-size: 1.5em;
+    margin: 6vw 0;
+}
+
+
+.circleItem {
+    margin: 1vw;
+    display: inline-block;
+    height: 40vw;
+    width: 40vw;
+    line-height: 40vw;
+    border-radius: 100000000px;
+    font-size: 1em;
+    font-family: Helvetica;
+    color: white;
+}
+
+#football {
+    background: url('./images/football.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#soccer {
+    background: url('./images/soccer.jpeg');
+    background-size: cover;
+}
+
+#basketball {
+    background: url('./images/basketball.jpeg');
+    background-size: cover;
+
+}
+
+#baseball {
+    background: url('./images/baseball.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+#hockey {
+    background: url('./images/hockey.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#olympics {
+    background: url('./images/olympics.jpeg');
+
+    background-size: cover;
+}
+
+#golf {
+    background: url('./images/golf.jpeg'); 
+    background-size: cover;
+}
+
+#tennis {
+    background: url('./images/tennis2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#textLogoArea {
+    text-align: center;
+    background: url('./images/tennis.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+#opacityLevel {
+    background: rgba(255,255,255, .9);
+}
+
+.partialWidth div  {
+    width: 85vw;
+    margin: auto;
+}
+
+.partialWidth div h1 {
+    font-size: 1.5em;
+    margin-bottom: 3vw;
+    padding-top:5vw;
+}
+
+#textLogoArea img {
+    width: 85vw;
+    margin: auto;
+    border-top: 1px solid black;
+    padding-top: 5vw;
+    margin-top: 5vw;
+}
+
+/*For Contact Form Page */
+#contactFormHeader {
+    background: url('https://static.pexels.com/photos/515169/pexels-photo-515169.jpeg');
+    height: 80vh;
+    background-size:cover;
+}
+
+#headerOpacityLayer {
+    background: rgba(0,0,0,.6);
+    height: 80vh;
+    text-align: center;
+    color: white;
+}
+
+#headerOpacityLayer h1 {
+    padding-top: 2.5em;
+    padding-bottom: .8em;
+    width: 95vw;
+    margin: auto;
+
+}
+
+#headerOpacityLayer p {
+    font-size: 1.1em;
+    width: 90vw;
+    margin: auto;
+}
+
+#contactFormArea {
+    width: 75vw;
+    margin: 3vh auto;
+    padding: 5vw;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#contactFormArea input, #contactFormArea label {
+    margin: 1vh 2vh;
+}
+
+#submitForm {
+    text-align: center;
+    margin: 4vh auto;
+}
+
+
+@media (min-width: 500px) {
+
+    #heroSection {
+        height: 60vh;
+    }
+
+    #heroSection div {
+        height: 40vh;
+        padding-top: 20vh;
+    }
+
+    #newsHeadline {
+        font-size: 3em;
+        margin-bottom: 15vh;
+        margin-bottom: 5vh;
+        
+    }
+
+    .circleItem {
+        height: 20vw;
+        width: 20vw;
+        line-height:20vw;
+    }
+
+    #opacityLevel p {
+        font-size: 1.1em;
+    }
+}
+
+@media(min-width: 630px) {
+    header {
+        height: 5.5em;
+    }
+    
+    header img {
+        height: 3.5em;
+        width: auto;
+        padding: 15px;
+    }
+
+    #menuButton {
+        margin: .5em 1em;
+        height: 3.2em;
+        width: 100px;
+        text-align: center;
+        padding: 0;
+    }
+
+    #heroSection div {
+        font-size: 1.3em;
+    }
+
+    #newsHeadline {
+        margin: 0 auto;
+    }
+
+    #circleArea h1 {
+        font-size: 1.8em;
+    }
+    .circleItem {
+        margin-top: 3vh;
+    }
+
+    #opacityLevel h1 {
+        font-size: 1.8em;
+    }
+
+    #opacityLevel p {
+        line-height: 1.7em;
+        font-size: 1.4em;
+    }
+}
+
+@media(min-width: 890px) {
+    #menuButton {
+        display: none;
+    }
+    nav {
+        display: inline-block;
+        float: right;
+        line-height: 5.4em;
+        height: 3.6em;
+        padding-right: 15px;
+    }
+    ul li {
+        list-style-type: none;
+        display: inline-block;
+        line-height: 3em;
+        padding: 0 15px;
+        font-family: Helvetica;
+    }
+
+    #heroSection {
+        height: 70vh;
+    }
+
+    #heroSection div {
+        height: 50vh;
+    }
+
+    #newsHeadline {
+        margin-top: 0;
+        margin-bottom: 10vh;
+    }
+
+    #circleArea {
+        padding-bottom: 5vh;
+    }
+
+    #circleArea h1 {
+        margin: 5vh;
+    }
+
+    .circleItem {
+        width: 10vw;
+        height: 10vw;
+        line-height: 10vw;
+        margin: 1vh;
+    }
+
+    #textLogoArea {
+        height: 69vh;
+        margin: auto;
+    }
+
+    #opacityLevel {
+        height: 69vh;
+    }
+
+    .partialWidth div {
+        padding: 0;
+        width: 40vw;
+        float: left;
+        height: 40vw;
+        margin: 3vh 0;
+        padding-left: 8vw;
+        max-height: 65vh;
+        max-width: 65vh;
+    }
+    
+    #textLogoArea img {
+        padding: 0;
+        width: 40vw;
+        border-top: none;
+        float: right;
+        height: 40vw;
+        margin: 3vh 0;
+        padding-right: 7vw;
+        max-height: 65vh;
+        max-width: 65vh;
+    }
+    
+}
+
+@media(min-width: 1500px) {
+
+    #circleArea {
+        width: 85vw;
+        margin: auto;
+        height: 40vh;
+    }
+    .circleItem {
+        width: 9vw;
+        height: 9vw;
+        line-height: 9vw;
+    }
+    #circleArea h1 {
+        font-size: 2.2em;
+    }
+
+    #textLogoArea {
+        margin: 0;
+        padding: 5vh 0;
+        height: 34vw;
+    }
+
+    #opacityLevel {
+        margin: 0;
+        padding: 5vh 0;
+        height: 34vw;
+        margin-top: -5vh;
+    }
+
+    .partialWidth {
+        padding: 0;
+       width: 70vw; 
+       height: 34vw;
+       margin: 0 auto;
+    }
+
+    .partialWidth div {
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0;
+        width:  34vw;
+        height: 34vw;  
+    }
+
+    #textLogoArea img {
+        padding: 0;
+        width: 34vw;
+        height: 34vw;
+        margin: auto;
+    }
+
+    .partialWidth div h1 {
+        text-align: center;
+    }
+}
