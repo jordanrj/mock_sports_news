@@ -6,21 +6,22 @@
         <meta name="author" value="Jordan Jones">
         <meta charset="utf-8">
         <title>Jordan Jones for Octagon</title>
-        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="../main.css">
     </head>
     <body>
         <header>
-            <img src="./images/logo.png" alt="Site Logo">
+            <a href="#"><img src="../images/logo.png" alt="Site Logo"></a>
+            
             <nav>
                 <ul>
-                    <li>SPORTS</li>
-                    <li>CONTACT</li>
+                    <a href="#circleArea"><li>SPORTS</li></a>
+                    <a href="./contact.html"><li>CONTACT</li></a>
                 </ul>
             </nav>
             <button id="menuButton" onclick="toggleNav()">Menu</button>
             <div id="menuNav" class="hide">
-                <a href="">SPORTS</a>
-                <a href="./contact">CONTACT</a>              
+                <a href="#circleArea">SPORTS</a>
+                <a href="./contact.html">CONTACT</a>              
             </div>
         </header>
 
@@ -53,16 +54,21 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                         </div> 
     
-                        <img src="./images/flowerlogo.png" alt="Flower Logo">
+                        <img src="../images/flowerlogo.png" alt="Flower Logo">
                     </div>
                     
                 </div>
             </div>
 
             <footer>
-
+                <h3 id="footerPart1">LOREM IPSUM</h3>
+                <div id="footerLogoContainer">
+                  <img src="../images/logo.png" alt="Footer Logo" id="footerLogo">
+                  <a href="#"></a>  
+                </div>
+                <h3 id="footerPart2"><a href="/contact">Contact</a> | <a href="">Other</a> | <a href="">Other 2</a></h3>
             </footer>
-            <script src="./main.js"></script>
+            <script src="../main.js"></script>
         </main>
     </body>
 </html>

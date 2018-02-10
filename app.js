@@ -1,9 +1,19 @@
+/* THIS FILE is a server implementation for the mock website for Octagon.
+    Features include:
+        *Form Validation
+        *Form submission to nonexistent MySQL database
+        *RESTful calls for both views
+
+    **NOTE: This server will not connect to a database or actual render the views.
+*/
+
 var express = require("express");
 var app = express();
-var bodyParser = require("bod-parser");
+var bodyParser = require("body-parser");
 var mysql = require("mysql");
 var validator = require("express-validator");
-
+var path = require("path");
+//Initiate connection to dB ('using' mock MySQL database)
 var dB = mysql.createConnection({
     host: "localhost",
     user: "root",
@@ -21,13 +31,16 @@ dB.connect(function(err) {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(validator());
+app.use(express.static(__dirname));
+const views = path.join(__dirname, 'views');
+
 
 app.get("/", function(req, res) {
-    res.render(path.join(__dirname, 'views/landing'));
+    res.sendFile('landing.html', {root: views});
 });
 
 app.get("/contact", function(req, res) {
-    res.render(path.join(__dirname, "views/contact"));
+    res.sendFile('contact.html', { root: views });
 });
 
 app.post("/contact", function(req, res) {
@@ -50,6 +63,7 @@ app.post("/contact", function(req, res) {
         var zipcode = req.body.zipcode;
         var state = req.body.state;
 
+        //Create dB query and call it
         var sql = "INSERT INTO contacts (firstName, lastName, email, zipcode, state) VALUES (?, ?, ?, ?, ?)";
         dB.query(sql, [firstName, lastName, email, zipcode, state], function(err, result) {
             if (err) {
@@ -61,6 +75,6 @@ app.post("/contact", function(req, res) {
     }
 });
 
-app.listen(process.end.PORT, function() {
+app.listen(8080, function() {
     console.log("Server Launched.");
 })

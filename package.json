@@ -10,8 +10,10 @@
   "description": "",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "consolidate": "^0.15.0",
     "express": "^4.16.2",
     "express-validator": "^4.3.0",
-    "mysql": "^2.15.0"
+    "mysql": "^2.15.0",
+    "path": "^0.12.7"
   }
 }

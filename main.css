@@ -10,7 +10,7 @@
 
 header {
     position: fixed;
-    height: 11vh;
+    height: 11.5vh;
     width: 100%;
     background-color: #fff;
 }
@@ -18,9 +18,8 @@ header {
 header img {
     height: 10vh;
     width: auto;
-    display: inline-block;
-    
-    padding: .5px;
+    display: inline-block; 
+    padding: 5px;
 }
 
 #menuButton {
@@ -46,10 +45,19 @@ header img {
     height: 40px;
     line-height: 40px;
     border-top: 1px solid #eee;
+    margin-top: -1vh;
 }
 
 nav {
     display: none;
+}
+
+nav a {
+    color: black;
+}
+
+nav li:hover {
+    text-decoration: underline;
 }
 
 #heroSection {
@@ -81,7 +89,6 @@ nav {
     margin-top: 5vh;
     width: 250px;
     background: rgba(0,0,0,0);
-    border: 2px solid white;
     border-radius: 35px;
     color: white;
 }
@@ -91,9 +98,9 @@ nav {
     margin: auto;
     width: 250px;
     background: rgba(0,0,0,0);
-    border-radius: 35px;
     border: none;
     color: white;
+    border: 2px solid white;
 }
 
 div a {
@@ -133,6 +140,7 @@ div a {
     color: white;
 }
 
+
 #football {
     background: url('./images/football.jpg');
     background-position: center;
@@ -164,7 +172,6 @@ div a {
 
 #olympics {
     background: url('./images/olympics.jpeg');
-
     background-size: cover;
 }
 
@@ -211,23 +218,23 @@ div a {
 /*For Contact Form Page */
 #contactFormHeader {
     background: url('https://static.pexels.com/photos/515169/pexels-photo-515169.jpeg');
-    height: 80vh;
+    height: 100%;
     background-size:cover;
 }
 
 #headerOpacityLayer {
     background: rgba(0,0,0,.6);
-    height: 80vh;
+    height: 100%;
     text-align: center;
     color: white;
+    padding-bottom: 5vh;
 }
 
 #headerOpacityLayer h1 {
-    padding-top: 2.5em;
+    padding-top: 3.5em;
     padding-bottom: .8em;
     width: 95vw;
     margin: auto;
-
 }
 
 #headerOpacityLayer p {
@@ -240,21 +247,97 @@ div a {
     width: 75vw;
     margin: 3vh auto;
     padding: 5vw;
-    border: 2px solid black;
-    border-radius: 10px;
+    background: rgba(0,0,0,.5);
 }
 
 #contactFormArea input, #contactFormArea label {
     margin: 1vh 2vh;
 }
 
+#contactFormArea label {
+    text-align: left;
+    font-size: 1.3em;
+    margin-bottom: -1em;
+    margin-top: 2vh;
+    display: block;
+}
+
+#contactFormArea input, select {
+    margin-bottom: 2vh;
+    background: rgba(255,255,255,.3);
+    border-radius: 5px;
+    height: 1.8em;
+    padding: .2em;
+    color: white;
+    border: none;
+}
+
 #submitForm {
+    background: green;
+    font-weight: 700;
+    color: white;
+    border: 2px solid rgb(19, 73, 19);
+    border-radius: 10px;
     text-align: center;
-    margin: 4vh auto;
+    margin: 4vh auto 1vh auto;
+    height: 3em;
+    width: 8em;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+footer h3 {
+    line-height: 30px;
+    margin: 0 auto;
+    height: 30px; 
+    font-weight: lighter;
+    font-size: .8em;
+}
+
+footer h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+footer h3 a:hover {
+    text-decoration: underline;
+}
+
+#footerLogoContainer {
+    line-height: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+footer img {
+    line-height: 50px;
+    width: auto;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: -5px;
 }
 
 
 @media (min-width: 500px) {
+
+    #headerOpacityLayer {
+        padding-top: 6vh;
+    }
+    #contactFormArea {
+        width: 55vw;
+    }
+
+    #contactFormArea input {
+        width: 35vw;
+    }
 
     #heroSection {
         height: 60vh;
@@ -269,7 +352,6 @@ div a {
         font-size: 3em;
         margin-bottom: 15vh;
         margin-bottom: 5vh;
-        
     }
 
     .circleItem {
@@ -280,6 +362,31 @@ div a {
 
     #opacityLevel p {
         font-size: 1.1em;
+    }
+
+    footer {
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    footer h3 {
+        display: inline-block;
+        width: 30vw;
+    }
+    
+    #footerLogoContainer {
+        display: inline-block;
+    }
+    
+    footer img {
+        height: auto;
+        width: 150px;
+        margin-bottom: -30px;
+        display: inline-block;
     }
 }
 
@@ -327,10 +434,35 @@ div a {
     }
 }
 
-@media(min-width: 890px) {
+@media(min-width: 990px) {
+
+    #contactFormArea {
+        padding: 5vh;
+        width: 35vw;
+        font-size: 1.3em;
+    }
+
+    #contactFormArea input {
+        width: 25vw;
+        height: 1.2em;
+        font-size: 1.3em;
+    }
+
+    #contactFormArea select {
+        height: 2em;
+        font-size: 1.1em;
+        width: 25vw;
+        margin-top: 1vh;
+    }
+
+    #contactFormArea button {
+        font-size: 1.1em;
+    }
+
     #menuButton {
         display: none;
     }
+
     nav {
         display: inline-block;
         float: right;
@@ -338,6 +470,7 @@ div a {
         height: 3.6em;
         padding-right: 15px;
     }
+
     ul li {
         list-style-type: none;
         display: inline-block;
@@ -393,6 +526,16 @@ div a {
         max-height: 65vh;
         max-width: 65vh;
     }
+
+    #opacityLevel h1 {
+        padding-top: w;
+        margin-bottom: 5px;
+    }
+
+    #opacityLevel p {
+        line-height: 5vh;
+        padding-top: 1vw;
+    }
     
     #textLogoArea img {
         padding: 0;
@@ -409,11 +552,16 @@ div a {
 }
 
 @media(min-width: 1500px) {
+    #headerOpacityLayer h1 {
+        margin: 6vh auto;
+        margin-top: 2vh;
+        font-size: 3em;
+    }
 
     #circleArea {
         width: 85vw;
         margin: auto;
-        height: 40vh;
+        height: 30vh;
     }
     .circleItem {
         width: 9vw;
@@ -438,7 +586,7 @@ div a {
     }
 
     .partialWidth {
-        padding: 0;
+       padding: 0;
        width: 70vw; 
        height: 34vw;
        margin: 0 auto;
