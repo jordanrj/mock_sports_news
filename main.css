@@ -10,13 +10,13 @@
 
 header {
     position: fixed;
-    height: 11.5vh;
+    height: 9.5vh;
     width: 100%;
     background-color: #fff;
 }
 
 header img {
-    height: 10vh;
+    height: 8vh;
     width: auto;
     display: inline-block; 
     padding: 5px;
@@ -24,8 +24,8 @@ header img {
 
 #menuButton {
     float: right;
-    margin: 1.5vh;
-    height: 8vh;
+    margin: 2vh 10px;
+    height: 6vh;
     background-color: #fff;
     border: 2px solid black;
     padding-left:6vw;
@@ -208,7 +208,7 @@ div a {
 }
 
 #textLogoArea img {
-    width: 85vw;
+    width: 40vw;
     margin: auto;
     border-top: 1px solid black;
     padding-top: 5vw;
@@ -345,7 +345,7 @@ footer img {
 
     #heroSection div {
         height: 40vh;
-        padding-top: 20vh;
+        padding: 10vh 0 10vh 0;
     }
 
     #newsHeadline {
@@ -396,13 +396,13 @@ footer img {
     }
     
     header img {
-        height: 3.5em;
+        height: 4.5em;
         width: auto;
-        padding: 15px;
+        padding: 7px;
     }
 
     #menuButton {
-        margin: .5em 1em;
+        margin: 1.3em 1em;
         height: 3.2em;
         width: 100px;
         text-align: center;
@@ -410,7 +410,8 @@ footer img {
     }
 
     #heroSection div {
-        font-size: 1.3em;
+        font-size: 1em;
+        padding: 20vh 0 0 0;
     }
 
     #newsHeadline {
@@ -488,6 +489,7 @@ footer img {
     }
 
     #newsHeadline {
+    
         margin-top: 0;
         margin-bottom: 10vh;
     }
