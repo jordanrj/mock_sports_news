@@ -1,5 +1,5 @@
-# octagon
-Mock website and serverside form processor for Octagon job app.
+
+Mock website and serverside form processor.
 
 Server file (app.js) uses nodejs and express, along with npm packages for form validation and path standardization.
 
