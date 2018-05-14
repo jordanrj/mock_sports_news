@@ -60,21 +60,22 @@ nav li:hover {
     text-decoration: underline;
 }
 
+main {
+    padding-top: 9.5vh;
+}
+
 #heroSection {
-    background: url('./images/snowboard.jpeg');
+    background: url('./images/snowboard.jpg');
     background-size: cover;
-    background-position: center;
-    height: 60vh;
+    background-position: center;   
 }
 
 #heroSection div {
-    height: 50vh;
     background: rgba(0,0,0,.6);
     color: #fff;
     text-align: center;
     font-family: Arial;
     font-size: 1em;
-    padding-top: 10vh;
 }
 
 #newsHeadline {
@@ -141,46 +142,46 @@ div a {
 }
 
 
-#football {
+.circleItemFootball {
     background: url('./images/football.jpg');
     background-position: center;
     background-size: cover;
 }
 
-#soccer {
-    background: url('./images/soccer.jpeg');
+.circleItemSoccer {
+    background: url('./images/soccer.jpg');
     background-size: cover;
 }
 
-#basketball {
-    background: url('./images/basketball.jpeg');
+.circleItemBasketball {
+    background: url('./images/basketball.jpg');
     background-size: cover;
 
 }
 
-#baseball {
-    background: url('./images/baseball.jpeg');
+.circleItemBaseball {
+    background: url('./images/baseball.jpg');
     background-position: center;
     background-size: cover;
 }
 
-#hockey {
+.circleItemHockey {
     background: url('./images/hockey.jpg');
     background-position: center;
     background-size: cover;
 }
 
-#olympics {
-    background: url('./images/olympics.jpeg');
+.circleItemOlympics {
+    background: url('./images/olympics.jpg');
     background-size: cover;
 }
 
-#golf {
-    background: url('./images/golf.jpeg'); 
+.circleItemGolf {
+    background: url('./images/golf.jpg'); 
     background-size: cover;
 }
 
-#tennis {
+.circleItemTennis {
     background: url('./images/tennis2.jpg');
     background-position: center;
     background-size: cover;
@@ -188,7 +189,7 @@ div a {
 
 #textLogoArea {
     text-align: center;
-    background: url('./images/tennis.jpeg');
+    background: url('./images/tennis.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -489,7 +490,6 @@ footer img {
     }
 
     #newsHeadline {
-    
         margin-top: 0;
         margin-bottom: 10vh;
     }
