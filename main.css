@@ -8,11 +8,13 @@
     display: none;
 }
 
+/* Concerns header and nav section */
 header {
     position: fixed;
     height: 9.5vh;
     width: 100%;
     background-color: #fff;
+    border-bottom: 2px solid black;
 }
 
 header img {
@@ -60,7 +62,9 @@ nav li:hover {
     text-decoration: underline;
 }
 
+/* concerns hero section */
 main {
+    /* moves main below fixed header */
     padding-top: 9.5vh;
 }
 
@@ -71,6 +75,8 @@ main {
 }
 
 #heroSection div {
+    /* styles text and places filter over hero image */
+    padding: 5% 0;
     background: rgba(0,0,0,.6);
     color: #fff;
     text-align: center;
@@ -117,7 +123,7 @@ div a {
     margin: 2vh auto;
 }
 
-
+/* Concerns area with links to different sports */
 #circleArea {
     text-align: center;
     padding-bottom: 10vw;
@@ -141,7 +147,7 @@ div a {
     color: white;
 }
 
-
+/* Gives background images to each circular link */
 .circleItemFootball {
     background: url('./images/football.jpg');
     background-position: center;
@@ -193,6 +199,7 @@ div a {
     background-size: cover;
     background-position: center;
 }
+
 #opacityLevel {
     background: rgba(255,255,255, .9);
 }
@@ -332,6 +339,7 @@ footer img {
     #headerOpacityLayer {
         padding-top: 6vh;
     }
+
     #contactFormArea {
         width: 55vw;
     }
@@ -403,7 +411,7 @@ footer img {
     }
 
     #menuButton {
-        margin: 1.3em 1em;
+        margin: 1.8em 1em;
         height: 3.2em;
         width: 100px;
         text-align: center;
@@ -551,6 +559,10 @@ footer img {
         max-width: 65vh;
     }
     
+    footer {
+        /* Corrects the lack of gap below the footer that only occurs in this screen range */
+        padding-bottom: 20px;
+    }
 }
 
 @media(min-width: 1500px) {
@@ -558,6 +570,11 @@ footer img {
         margin: 6vh auto;
         margin-top: 2vh;
         font-size: 3em;
+    }
+    
+    main {
+        /* fixes small gap below header and above main that only appears in this screen range */
+        padding-top: 8vh;
     }
 
     #circleArea {
@@ -611,5 +628,9 @@ footer img {
 
     .partialWidth div h1 {
         text-align: center;
+    }
+
+    footer {
+        padding-bottom: 0;
     }
 }
